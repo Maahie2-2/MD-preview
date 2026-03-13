@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame D Photography | Bold Editorial & Creative Portrait Photography</title>
+    <meta name="description" content="Madame D Photography specializes in bold editorial portraits, steampunk, fantasy, and conceptual photography. Featured in ENVYD Magazine. Book your creative session today and bring your imaginative vision to life.">
+    <meta name="keywords" content="editorial photography, creative portraits, steampunk photography, fantasy photography, conceptual photography, Madame D Photography, artistic portraits, magazine photography">
+    <link rel="canonical" href="https://madamedphotography.com/">
+    <meta name="last-modified" content="2025-01-01">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Madame D Photography | Bold Editorial & Creative Portraits">
+    <meta property="og:description" content="Where imagination meets the lens. Specializing in editorial, steampunk, and fantasy photography.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madamedphotography.com/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Madame D Photography | Bold Editorial & Creative Portraits">
+    <meta name="twitter:description" content="Where imagination meets the lens. Specializing in editorial, steampunk, and fantasy photography.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    },
+                    colors: {
+                        'dark-bg': '#050208',
+                        'dark-card': '#0d0510',
+                        'brand-orange': '#d4622f',
+                        'brand-teal': '#2d9b9b',
+                        'text-muted': '#b8b8c0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-script { font-family: 'Great Vibes', cursive; }
+        .font-display { font-family: 'Cinzel', serif; }
+        .translate-x-full { transform: translateX(100%); }
+        .translate-x-0 { transform: translateX(0); }
+    </style>
+</head>
+<body class="bg-dark-bg font-sans min-h-screen text-white">
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="absolute top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a class="font-display text-2xl text-white hover:text-brand-teal transition-colors duration-300 whitespace-nowrap cursor-pointer" href="dark-index.html">MADAME D</a>
+                    <div class="flex items-center gap-2 sm:gap-4">
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a class="text-white/80 hover:text-brand-teal transition-colors duration-300 text-sm uppercase tracking-wider cursor-pointer whitespace-nowrap" href="dark-index.html">Home</a>
+                            <a class="text-brand-teal font-semibold text-sm uppercase tracking-wider cursor-pointer whitespace-nowrap" href="shop-dark.html">Shop</a>
+                        </nav>
+                        <a title="Switch to Light Mode" href="shop-light.html" class="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/20 bg-white/5 hover:border-brand-teal transition-all duration-300 text-sm text-white/80 hover:text-brand-teal whitespace-nowrap cursor-pointer shadow-sm">
+                            <i class="ri-sun-line text-base"></i>
+                            <span class="hidden xs:inline">Light</span>
+                        </a>
+                        <button id="cart-toggle" class="relative w-10 h-10 flex items-center justify-center text-white hover:text-brand-teal transition-colors duration-300 cursor-pointer">
+                            <i class="ri-shopping-cart-line text-2xl"></i>
+                        </button>
+                        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 text-white cursor-pointer" aria-label="Toggle Menu">
+                            <i class="ri-menu-line text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0d0510] transform translate-x-full transition-transform duration-300 md:hidden border-l border-white/10">
+            <div class="flex flex-col h-full p-8">
+                <div class="flex items-center justify-between mb-12">
+                    <span class="font-display text-2xl tracking-wider text-white">MADAME D</span>
+                    <button id="close-menu" class="w-10 h-10 flex items-center justify-center text-white cursor-pointer">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-6">
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="dark-index.html">Home</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="shop-dark.html">Shop</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="dark-index.html#portfolio">Portfolio</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="dark-index.html#services">Services</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="dark-index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-16 px-6">
+            <div class="max-w-7xl mx-auto text-center">
+                <h1 class="font-serif text-5xl md:text-6xl text-white mb-4">Gallery Art Shop</h1>
+                <p class="text-text-muted text-lg max-w-2xl mx-auto">Bring the magic home with museum-quality prints from our most iconic shoots</p>
+            </div>
+        </section>
+
+        <!-- Filter Bar -->
+        <section class="px-6 pb-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <button class="px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer whitespace-nowrap bg-brand-teal text-white">All</button>
+                    <button class="px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer whitespace-nowrap bg-white/5 text-text-muted hover:bg-white/10 hover:text-white">Editorial</button>
+                    <button class="px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer whitespace-nowrap bg-white/5 text-text-muted hover:bg-white/10 hover:text-white">Steampunk</button>
+                    <button class="px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer whitespace-nowrap bg-white/5 text-text-muted hover:bg-white/10 hover:text-white">Fantasy</button>
+                    <button class="px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer whitespace-nowrap bg-white/5 text-text-muted hover:bg-white/10 hover:text-white">Conceptual</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="px-6 pb-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" data-product-shop="true">
+                    
+
+                    <div class="group bg-dark-card rounded-lg overflow-hidden border-2 border-transparent hover:border-brand-teal transition-all duration-300">
+                        <div class="relative w-full h-80 overflow-hidden">
+                            <img alt="Vogue Essence" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="images/shop-dark-image-1.jpg">
+                            <div class="absolute top-3 right-3">
+                                <span class="px-3 py-1 bg-brand-orange text-white text-xs uppercase tracking-wider rounded-full">Editorial</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif text-xl text-white mb-3">Vogue Essence</h3>
+                            <div class="mb-4">
+                                <label class="text-text-muted text-xs uppercase tracking-wider mb-2 block">Select Size</label>
+                                <select class="w-full bg-dark-bg border border-brand-teal/30 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-brand-teal transition-colors duration-200 cursor-pointer">
+                                    <option value="8x10">8x10 - $45</option>
+                                </select>
+                            </div>
+                            <button class="w-full py-3 bg-brand-orange text-white rounded-lg hover:bg-brand-teal transition-colors duration-300 text-sm uppercase tracking-wider font-semibold cursor-pointer whitespace-nowrap add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Sidebar -->
+        <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full md:w-[450px] bg-dark-card shadow-2xl z-50 transform transition-transform duration-300 translate-x-full">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-6 border-b border-white/10">
+                    <h2 class="font-serif text-2xl text-white">Your Cart</h2>
+                    <button id="close-cart" class="w-10 h-10 flex items-center justify-center text-white hover:text-brand-orange transition-colors duration-300 cursor-pointer">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <div id="cart-items" class="flex-1 overflow-y-auto p-6">
+                    <div class="text-center py-12">
+                        <i class="ri-shopping-cart-line text-6xl text-white/20 mb-4"></i>
+                        <p class="text-text-muted">Your cart is empty</p>
+                    </div>
+                </div>
+                <div id="cart-footer" class="p-6 border-t border-white/10 hidden">
+                    <div class="flex justify-between mb-4">
+                        <span class="text-text-muted">Subtotal</span>
+                        <span id="cart-total" class="text-white font-bold">$0</span>
+                    </div>
+                    <button class="w-full py-3 bg-brand-orange text-white rounded-lg hover:bg-brand-teal transition-colors duration-300 text-sm uppercase tracking-wider font-semibold">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Overlay -->
+        <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity duration-300 opacity-0"></div>
+    </div>
+
+    <script>
+        // Cart functionality
+        let cart = [];
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        const cartItems = document.getElementById('cart-items');
+        const cartFooter = document.getElementById('cart-footer');
+        const cartTotal = document.getElementById('cart-total');
+        const cartToggle = document.getElementById('cart-toggle');
+        const closeCart = document.getElementById('close-cart');
+
+        function openCart() {
+            cartSidebar.classList.remove('translate-x-full');
+            cartSidebar.classList.add('translate-x-0');
+            cartOverlay.classList.remove('hidden');
+            setTimeout(() => cartOverlay.classList.remove('opacity-0'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCartFunc() {
+            cartSidebar.classList.remove('translate-x-0');
+            cartSidebar.classList.add('translate-x-full');
+            cartOverlay.classList.add('opacity-0');
+            setTimeout(() => cartOverlay.classList.add('hidden'), 300);
+            document.body.style.overflow = '';
+        }
+
+        function updateCart() {
+            if (cart.length === 0) {
+                cartItems.innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="ri-shopping-cart-line text-6xl text-white/20 mb-4"></i>
+                        <p class="text-text-muted">Your cart is empty</p>
+                    </div>
+                `;
+                cartFooter.classList.add('hidden');
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+                    <div class="flex gap-4 mb-4 bg-dark-bg p-4 rounded-lg">
+                        <div class="w-20 h-20 bg-dark-card rounded overflow-hidden flex-shrink-0">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-white font-serif text-sm mb-1">${item.name}</h4>
+                            <p class="text-text-muted text-xs mb-1">${item.size}</p>
+                            <p class="text-brand-orange font-bold">${item.price}</p>
+                        </div>
+                        <button onclick="removeFromCart(${index})" class="text-text-muted hover:text-brand-orange transition-colors">
+                            <i class="ri-delete-bin-line text-xl"></i>
+                        </button>
+                    </div>
+                `).join('');
+                
+                const total = cart.reduce((sum, item) => sum + parseInt(item.price.replace('$', '')), 0);
+                cartTotal.textContent = `$${total}`;
+                cartFooter.classList.remove('hidden');
+            }
+        }
+
+        function addToCart(name, size, price, image) {
+            cart.push({ name, size, price, image });
+            updateCart();
+            openCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        // Event listeners
+        cartToggle.addEventListener('click', openCart);
+        closeCart.addEventListener('click', closeCartFunc);
+        cartOverlay.addEventListener('click', closeCartFunc);
+
+        // Add to cart buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.group');
+                const name = card.querySelector('h3').textContent;
+                const size = card.querySelector('select').value;
+                const price = card.querySelector('select').selectedOptions[0].text.split('-')[1].trim();
+                const image = card.querySelector('img').src;
+                
+                addToCart(name, size, price, image);
+                
+                // Visual feedback
+                this.textContent = 'Added!';
+                this.classList.add('bg-brand-teal');
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                    this.classList.remove('bg-brand-teal');
+                }, 2000);
+            });
+        });
+
+        // Filter buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (['All', 'Editorial', 'Steampunk', 'Fantasy', 'Conceptual'].includes(button.textContent.trim())) {
+                button.addEventListener('click', function() {
+                    // Reset all buttons
+                    document.querySelectorAll('button').forEach(btn => {
+                        if (['All', 'Editorial', 'Steampunk', 'Fantasy', 'Conceptual'].includes(btn.textContent.trim())) {
+                            btn.classList.remove('bg-brand-teal', 'text-white');
+                            btn.classList.add('bg-white/5', 'text-text-muted');
+                        }
+                    });
+                    
+                    // Set active button
+                    this.classList.remove('bg-white/5', 'text-text-muted');
+                    this.classList.add('bg-brand-teal', 'text-white');
+                });
+            }
+        });
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('nav a');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+    </script>
+</body>
+</html>

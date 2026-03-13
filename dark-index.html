@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame D Photography | Bold Editorial & Creative Portrait Photography</title>
+    <meta name="description" content="Madame D Photography specializes in bold editorial portraits, steampunk, fantasy, and conceptual photography. Featured in ENVYD Magazine. Book your creative session today and bring your imaginative vision to life.">
+    <meta name="keywords" content="editorial photography, creative portraits, steampunk photography, fantasy photography, conceptual photography, Madame D Photography, artistic portraits, magazine photography">
+    <link rel="canonical" href="https://madamedphotography.com/">
+    <meta name="last-modified" content="2025-01-01">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Madame D Photography | Bold Editorial & Creative Portraits">
+    <meta property="og:description" content="Where imagination meets the lens. Specializing in editorial, steampunk, and fantasy photography.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madamedphotography.com/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Madame D Photography | Bold Editorial & Creative Portraits">
+    <meta name="twitter:description" content="Where imagination meets the lens. Specializing in editorial, steampunk, and fantasy photography.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    },
+                    colors: {
+                        'dark-bg': '#0d0510',
+                        'dark-bg-secondary': '#1a0a1f',
+                        'dark-bg-tertiary': '#1f0f2a',
+                        'dark-card': '#0a0510',
+                        'dark-footer': '#050208',
+                        'brand-orange': '#d4622f',
+                        'brand-teal': '#2d9b9b',
+                        'brand-green': '#1f5c4a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-script { font-family: 'Great Vibes', cursive; }
+        .font-display { font-family: 'Cinzel', serif; }
+        .transition-400 { transition-duration: 400ms; }
+        .hover\:scale-103:hover { transform: scale(1.03); }
+        .bg-opacity-3 { opacity: 0.03; }
+        .opacity-3 { opacity: 0.03; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#1a0a1f] via-[#0d0510] to-[#1a0a1f] font-sans text-white">
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="absolute top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0d0510]/95 backdrop-blur-md shadow-lg">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <a href="dark-index.html" class="font-display text-white text-2xl tracking-wider cursor-pointer hover:text-brand-teal transition-colors">MADAME D</a>
+                <div class="flex items-center gap-4">
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-white/80 hover:text-[#2d9b9b] transition-colors duration-300 text-sm tracking-wide cursor-pointer whitespace-nowrap" href="#portfolio">PORTFOLIO</a>
+                        <a class="text-white/80 hover:text-[#2d9b9b] transition-colors duration-300 text-sm tracking-wide cursor-pointer whitespace-nowrap" href="#services">SERVICES</a>
+                        <a class="text-white/80 hover:text-[#2d9b9b] transition-colors duration-300 text-sm tracking-wide cursor-pointer whitespace-nowrap" href="shop-dark.html">SHOP</a>
+                        <a class="text-white/80 hover:text-[#2d9b9b] transition-colors duration-300 text-sm tracking-wide cursor-pointer whitespace-nowrap" href="#about">ABOUT</a>
+                        <a class="text-white/80 hover:text-[#2d9b9b] transition-colors duration-300 text-sm tracking-wide cursor-pointer whitespace-nowrap" href="#contact">CONTACT</a>
+                    </nav>
+                    <button class="hidden sm:block px-6 py-2 bg-[#d4622f] text-white rounded-full hover:bg-[#2d9b9b] transition-all duration-300 text-sm tracking-wide whitespace-nowrap cursor-pointer">BOOK SESSION</button>
+                    <a title="Switch to Light Mode" href="index.html" class="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/20 bg-white/10 hover:border-[#2d9b9b] hover:bg-white/20 transition-all duration-300 text-sm text-white/70 hover:text-[#2d9b9b] whitespace-nowrap cursor-pointer">
+                        <i class="ri-sun-line text-base"></i>
+                        <span class="hidden xs:inline">Light</span>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 text-white cursor-pointer" aria-label="Toggle Menu">
+                        <i class="ri-menu-line text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0d0510] transform translate-x-full transition-transform duration-300 md:hidden">
+            <div class="flex flex-col h-full p-8">
+                <div class="flex items-center justify-between mb-12">
+                    <span class="font-display text-2xl tracking-wider text-white">MADAME D</span>
+                    <button id="close-menu" class="w-10 h-10 flex items-center justify-center text-white cursor-pointer">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-6">
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="#portfolio">Portfolio</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="#services">Services</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="#about">About</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="shop-dark.html">Shop</a>
+                    <a class="text-2xl font-serif text-white/90 hover:text-brand-teal transition-colors" href="#contact">Contact</a>
+                </nav>
+                <div class="mt-auto pt-12">
+                    <button class="w-full py-4 bg-[#d4622f] text-white rounded-full text-lg tracking-wide font-medium shadow-lg mb-6">BOOK YOUR SESSION</button>
+                    <div class="flex items-center justify-center gap-6">
+                        <a href="#" class="text-white/60 hover:text-brand-teal transition-colors"><i class="ri-instagram-line text-2xl"></i></a>
+                        <a href="#" class="text-white/60 hover:text-brand-teal transition-colors"><i class="ri-facebook-line text-2xl"></i></a>
+                        <a href="#" class="text-white/60 hover:text-brand-teal transition-colors"><i class="ri-mail-line text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen w-full overflow-hidden">
+            <div class="absolute inset-0">
+                <img alt="Madame D Photography Hero" class="w-full h-full object-cover object-top" src="images/Hero-image-dark.jpg">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(13,5,16,0.4)_100%)]"></div>
+            </div>
+            <div class="relative h-full flex flex-col items-center justify-center px-6 text-center">
+                <div class="max-w-4xl w-full">
+                    <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl font-bold text-white tracking-[0.08em] mb-4 drop-shadow-2xl">MADAME D PHOTOGRAPHY</h1>
+                    <p class="text-[#2d9b9b] text-lg sm:text-2xl tracking-[0.08em] font-light mb-6 italic">Capturing Love, Beauty & Bold Stories</p>
+                    <p class="text-[#d4622f] text-[10px] sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase font-semibold mb-8">Event & Lifestyle · Boudoir & Business · Weddings & Engagements</p>
+                    <p class="text-white/80 text-base sm:text-lg tracking-wide mb-4 max-w-2xl mx-auto px-4">Photography that celebrates real emotion, bold expression, and unforgettable moments.</p>
+                    <p class="text-white text-sm sm:text-base font-medium mb-12">Let’s create something beautiful together.</p>
+                    <div class="flex flex-wrap items-center justify-center gap-6">
+                        <a href="#portfolio" class="px-10 py-4 bg-[#d4622f] text-white rounded-full text-sm tracking-wide font-semibold hover:bg-[#2d9b9b] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#2d9b9b]/50 whitespace-nowrap cursor-pointer inline-block">VIEW PORTFOLIO</a>
+                        <a href="#contact" class="px-10 py-4 border-2 border-[#2d9b9b] text-white rounded-full text-sm tracking-wide font-semibold hover:bg-[#2d9b9b] hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer inline-block">BOOK YOUR SESSION</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 px-6 bg-gradient-to-b from-[#0d0510] to-[#1a0a1f]">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                    <div class="lg:col-span-3 relative">
+                        <p class="text-[#1f5c4a] text-xs tracking-[0.2em] uppercase mb-6 font-semibold">MEET THE ARTIST</p>
+                        <div class="relative">
+                            <span class="absolute -left-8 -top-4 text-[#d4622f]/30 text-9xl font-serif leading-none">"</span>
+                            <h2 class="font-serif text-4xl md:text-5xl text-white leading-tight mb-8 relative z-10">I love creating images that feel like they belong in another world — a little dramatic, a little magical, and always deeply personal.</h2>
+                        </div>
+                        <p class="text-[#b8b8c0] text-base leading-relaxed max-w-xl mb-6">My work blends editorial style with storytelling, turning each photoshoot into a creative collaboration. Whether it's a fantasy-inspired portrait, a bold editorial concept, or a meaningful life moment, every session is about bringing your vision to life in a way that feels authentic and powerful.</p>
+                        <p class="text-[#b8b8c0] text-base leading-relaxed max-w-xl mb-8">My photography has been featured in ENVYD Magazine and other publications, highlighting my passion for imaginative and artistic storytelling.</p>
+                        <p class="text-[#2d9b9b] text-2xl font-script italic">— Darian</p>
+
+                    </div>
+                    <div class="lg:col-span-2 relative">
+                        <div class="relative rounded-3xl overflow-hidden border-4 border-[#2d9b9b] shadow-[0_20px_60px_rgba(45,155,155,0.15)]">
+                            <img alt="Madame D Portrait" class="w-full h-full object-cover object-top" src="images/self%20potrait.jpg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-32 px-6 bg-[#0d0510]">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <div class="flex items-center justify-center gap-8 mb-4">
+                        <div class="h-0.5 w-32 bg-gradient-to-r from-transparent to-[#d4622f]"></div>
+                        <h2 class="font-serif text-6xl font-bold text-white">PORTFOLIO</h2>
+                        <div class="h-0.5 w-32 bg-gradient-to-l from-transparent to-[#d4622f]"></div>
+                    </div>
+                    <p class="text-[#2d9b9b] text-2xl italic font-serif mb-4">Explore the Stories Behind the Lens</p>
+                    <p class="text-white/60 text-lg max-w-2xl mx-auto">Every image tells a story — from bold editorial concepts to dreamy fantasy scenes and timeless portraits.</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+                    <button class="px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer bg-[#d4622f] text-white shadow-lg">All</button>
+                    <button class="px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-gray-400 border border-gray-600 hover:border-[#2d9b9b] hover:text-[#2d9b9b]">Editorial</button>
+                    <button class="px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-gray-400 border border-gray-600 hover:border-[#2d9b9b] hover:text-[#2d9b9b]">Steampunk</button>
+                    <button class="px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-gray-400 border border-gray-600 hover:border-[#2d9b9b] hover:text-[#2d9b9b]">Fantasy</button>
+                    <button class="px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent text-gray-400 border border-gray-600 hover:border-[#2d9b9b] hover:text-[#2d9b9b]">Conceptual</button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Portfolio Item 1 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-2 border-4 border-[#2d9b9b]">
+                        <img alt="Steampunk Ferry Adventure" class="w-full h-full object-cover object-top" src="images/protfolio-image-1.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-1 border-4 border-[#1f5c4a]">
+                        <img alt="Dark Fantasy Portrait" class="w-full h-full object-cover object-top" src="images/protfolio-image-2.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-2 border-4 border-[#d4622f]">
+                        <img alt="Editorial Elegance" class="w-full h-full object-cover object-top" src="images/protfolio-image-3.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-1 border-4 border-[#2d9b9b]">
+                        <img alt="Conceptual Vision" class="w-full h-full object-cover object-top" src="images/protfolio-image-4.webp">
+
+                    </div>
+                    <!-- Portfolio Item 5 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-2 border-4 border-[#1f5c4a]">
+                        <img alt="Victorian Dreams" class="w-full h-full object-cover object-top" src="images/protfolio-image-6.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 6 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-1 border-4 border-[#d4622f]">
+                        <img alt="Mystical Realm" class="w-full h-full object-cover object-top" src="images/protfolio-image-5.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 7 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-2 border-4 border-[#2d9b9b]">
+                        <img alt="Bold Expression" class="w-full h-full object-cover object-top" src="images/protfolio-image-7.jpg">
+
+                    </div>
+                    <!-- Portfolio Item 8 -->
+                    <div class="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-400 hover:scale-103 row-span-1 border-4 border-[#1f5c4a]">
+                        <img alt="Artistic Narrative" class="w-full h-full object-cover object-top" src="images/protfolio-image-8.jpg">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-32 px-6 bg-[#1f0f2a] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, rgb(31, 92, 74) 0px, rgb(31, 92, 74) 1px, transparent 0px, transparent 50%); background-size: 20px 20px;"></div>
+            </div>
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center mb-20">
+                    <h2 class="font-serif text-6xl font-bold text-white mb-4">SERVICES</h2>
+                    <p class="text-[#2d9b9b] text-xl italic">Bring Your Vision to Life</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-[#0a0510] rounded-3xl p-8 relative overflow-hidden group hover:transform hover:translate-y-[-8px] transition-all duration-400" style="border: 3px solid rgb(212, 98, 47);">
+                        <div class="flex items-center justify-center w-16 h-16 mb-8 mx-auto">
+                            <i class="ri-camera-lens-line text-6xl" style="color: rgb(212, 98, 47);"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-2xl text-center mb-6 leading-tight min-h-[60px]">Event & Lifestyle</h3>
+                        <div class="w-10 h-0.5 mx-auto mb-6" style="background-color: rgb(212, 98, 47);"></div>
+                        <p class="text-[#b8b8c0] text-sm leading-relaxed text-center mb-8 min-h-[100px]">From intimate gatherings to large celebrations, I capture the real moments — the laughter, the emotion, and the energy that make your event unforgettable.</p>
+                        <p class="text-center font-bold text-base mb-6" style="color: rgb(212, 98, 47);">Starting at $350</p>
+                        <button class="w-full py-3 rounded-full text-white text-sm tracking-wide font-medium transition-all duration-300 whitespace-nowrap cursor-pointer" style="border: 2px solid rgb(212, 98, 47); background-color: transparent;">LEARN MORE</button>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-[#0a0510] rounded-3xl p-8 relative overflow-hidden group hover:transform hover:translate-y-[-8px] transition-all duration-400" style="border: 3px solid rgb(45, 155, 155);">
+                        <div class="flex items-center justify-center w-16 h-16 mb-8 mx-auto">
+                            <i class="ri-heart-line text-6xl" style="color: rgb(45, 155, 155);"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-2xl text-center mb-6 leading-tight min-h-[60px]">Boudoir & Business</h3>
+                        <div class="w-10 h-0.5 mx-auto mb-6" style="background-color: rgb(45, 155, 155);"></div>
+                        <p class="text-[#b8b8c0] text-sm leading-relaxed text-center mb-8 min-h-[100px]">Confident, empowering portraits designed to celebrate who you are. Whether it’s a bold boudoir session or polished branding photos for your business, we’ll create images that feel powerful and authentic.</p>
+                        <p class="text-center font-bold text-base mb-6" style="color: rgb(45, 155, 155);">Starting at $450</p>
+                        <button class="w-full py-3 rounded-full text-white text-sm tracking-wide font-medium transition-all duration-300 whitespace-nowrap cursor-pointer" style="border: 2px solid rgb(45, 155, 155); background-color: transparent;">LEARN MORE</button>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-[#0a0510] rounded-3xl p-8 relative overflow-hidden group hover:transform hover:translate-y-[-8px] transition-all duration-400" style="border: 3px solid rgb(31, 92, 74);">
+                        <div class="flex items-center justify-center w-16 h-16 mb-8 mx-auto">
+                            <i class="ri-vip-diamond-line text-6xl" style="color: rgb(31, 92, 74);"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-2xl text-center mb-6 leading-tight min-h-[60px]">Weddings & Engagements</h3>
+                        <div class="w-10 h-0.5 mx-auto mb-6" style="background-color: rgb(31, 92, 74);"></div>
+                        <p class="text-[#b8b8c0] text-sm leading-relaxed text-center mb-8 min-h-[100px]">Your love story deserves to be remembered beautifully. I document the genuine emotions and meaningful moments — from the quiet glances to the joyful celebrations.</p>
+                        <p class="text-center font-bold text-base mb-6" style="color: rgb(31, 92, 74);">Starting at $500</p>
+                        <button class="w-full py-3 rounded-full text-white text-sm tracking-wide font-medium transition-all duration-300 whitespace-nowrap cursor-pointer" style="border: 2px solid rgb(31, 92, 74); background-color: transparent;">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-32 px-6 bg-gradient-to-b from-[#0d0510] to-[#1a0a1f] relative">
+            <div class="max-w-5xl mx-auto relative">
+                <div class="relative">
+                    <span class="absolute -left-4 -top-8 text-[#d4622f]/20 text-[180px] font-serif leading-none pointer-events-none">"</span>
+                    <div class="relative z-10 text-center px-12">
+                        <p class="text-white font-serif text-3xl md:text-4xl leading-tight mb-12" style="text-shadow: rgba(255, 255, 255, 0.1) 0px 0px 40px;">I had an amazing experience with Madam D Photography! From start to finish, everything was professional, relaxed, and incredibly well done. Madam D has a great eye for detail and really knows how to capture natural moments that feel genuine rather than staged.<br><br>The whole session felt comfortable and fun, and the final photos completely exceeded my expectations. The lighting, composition, and editing were all beautiful, and you can tell a lot of care goes into every shot.</p>
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="flex items-center gap-3">
+                                <h4 class="text-white font-bold text-xl">Loyalty Barbershop</h4>
+                                <div class="flex items-center gap-1 text-[#1f5c4a] text-sm">
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                    <span>Recommended</span>
+                                </div>
+                            </div>
+                            <p class="text-[#2d9b9b] text-sm italic">on Madame-D Photography</p>
+                        </div>
+                    </div>
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full border-2 border-[#2d9b9b] bg-transparent flex items-center justify-center text-white hover:text-[#d4622f] hover:border-[#d4622f] transition-all duration-300 cursor-pointer" aria-label="Previous testimonial">
+                        <i class="ri-arrow-left-line text-2xl"></i>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full border-2 border-[#2d9b9b] bg-transparent flex items-center justify-center text-white hover:text-[#d4622f] hover:border-[#d4622f] transition-all duration-300 cursor-pointer" aria-label="Next testimonial">
+                        <i class="ri-arrow-right-line text-2xl"></i>
+                    </button>
+                </div>
+                <div class="flex items-center justify-center gap-3 mt-16">
+                    <button class="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer bg-gray-600 hover:bg-gray-400" aria-label="Go to testimonial 1"></button>
+                    <button class="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer bg-gray-600 hover:bg-gray-400" aria-label="Go to testimonial 2"></button>
+                    <button class="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer bg-[#2d9b9b] w-8" aria-label="Go to testimonial 3"></button>
+                    <button class="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer bg-gray-600 hover:bg-gray-400" aria-label="Go to testimonial 4"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-32 px-6 bg-[#0d0510]">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-0 items-stretch">
+                    <div class="lg:col-span-2 relative overflow-hidden rounded-l-[40px] min-h-[600px]">
+                        <img alt="Behind the Scenes" class="w-full h-full object-cover object-top" src="images/behind-the-scene.webp">
+                        <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#1a0f24] to-transparent"></div>
+                    </div>
+                    <div class="lg:col-span-3 bg-[#1a0f24] p-12 lg:p-20 rounded-r-[40px] shadow-2xl">
+                        <p class="text-[#1f5c4a] text-xs tracking-[0.2em] uppercase mb-4 font-semibold">GET IN TOUCH</p>
+                        <h2 class="font-serif text-5xl font-bold text-white leading-tight mb-6">Let’s Capture Your Moments</h2>
+                        <p class="text-[#b8b8c0] text-base mb-12">Book your editorial session or inquire about collaborations</p>
+                        <form class="space-y-6">
+                            <div>
+                                <input placeholder="Your Name" required class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-lg px-5 py-4 text-white text-base placeholder-gray-500 placeholder:italic focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] focus:shadow-[0_0_16px_rgba(45,155,155,0.3)] transition-all duration-200" type="text" name="name">
+                            </div>
+                            <div>
+                                <input placeholder="Your Email" required class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-lg px-5 py-4 text-white text-base placeholder-gray-500 placeholder:italic focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] focus:shadow-[0_0_16px_rgba(45,155,155,0.3)] transition-all duration-200" type="email" name="email">
+                            </div>
+                            <div>
+                                <input placeholder="Phone Number" class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-lg px-5 py-4 text-white text-base placeholder-gray-500 placeholder:italic focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] focus:shadow-[0_0_16px_rgba(45,155,155,0.3)] transition-all duration-200" type="tel" name="phone">
+                            </div>
+                            <div>
+                                <select name="sessionType" required class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-lg px-5 py-4 text-white text-base focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] focus:shadow-[0_0_16px_rgba(45,155,155,0.3)] transition-all duration-200 cursor-pointer">
+                                    <option value="" class="bg-[#0d0510]">Select Session Type</option>
+                                    <option value="editorial" class="bg-[#0d0510]">Editorial Portrait</option>
+                                    <option value="fantasy" class="bg-[#0d0510]">Conceptual & Fantasy</option>
+                                    <option value="steampunk" class="bg-[#0d0510]">Steampunk & Period</option>
+                                    <option value="other" class="bg-[#0d0510]">Other / Collaboration</option>
+                                </select>
+                            </div>
+                            <div>
+                                <textarea name="message" placeholder="Tell me about your vision..." rows="5" required class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-lg px-5 py-4 text-white text-base placeholder-gray-500 placeholder:italic focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] focus:shadow-[0_0_16px_rgba(45,155,155,0.3)] transition-all duration-200 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-[#d4622f] text-white py-5 rounded-full text-base tracking-wide font-semibold hover:bg-[#1f5c4a] hover:shadow-[0_8px_24px_rgba(31,92,74,0.4)] transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap cursor-pointer">
+                                <span>SEND MESSAGE</span>
+                                <i class="ri-arrow-right-line text-xl"></i>
+                            </button>
+                        </form>
+                        <div class="mt-12 text-center">
+                            <p class="text-gray-400 text-sm mb-4">Or reach out directly:</p>
+                            <div class="flex items-center justify-center gap-6">
+                                <a href="https://www.instagram.com/madamedphotography/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center text-[#2d9b9b] hover:text-[#d4622f] transition-colors duration-300 cursor-pointer">
+                                    <i class="ri-instagram-line text-3xl"></i>
+                                </a>
+                                <a href="mailto:contact@madamedphotography.com" class="w-12 h-12 flex items-center justify-center text-[#2d9b9b] hover:text-[#d4622f] transition-colors duration-300 cursor-pointer">
+                                    <i class="ri-mail-line text-3xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#050208] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-3">
+                <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M50 0 L100 50 L50 100 L0 50 Z\' fill=\'none\' stroke=\'%231a0a1f\' stroke-width=\'0.5\'/%3E%3C/svg%3E'); background-size: 100px 100px;"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                    <div>
+                        <a href="dark-index.html" class="font-display text-3xl text-white mb-2 hover:text-brand-teal transition-colors">MADAME D</a>
+                        <p class="text-[#d4622f] text-sm mb-8">Bold Editorial Photography</p>
+                        <form class="relative">
+                            <input placeholder="Subscribe to newsletter" required class="w-full bg-[#0d0510] border border-[#2d9b9b] rounded-full px-5 py-3 pr-14 text-white text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#2d9b9b] transition-all duration-200" type="email">
+                            <button type="submit" class="absolute right-1 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#d4622f] rounded-full flex items-center justify-center text-white hover:bg-[#2d9b9b] transition-colors duration-300 cursor-pointer">
+                                <i class="ri-send-plane-fill"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <h4 class="text-[#1f5c4a] text-sm uppercase tracking-wider mb-6 font-semibold">Quick Links</h4>
+                        <div class="space-y-4">
+                            <a class="block text-[#b8b8c0] hover:text-[#2d9b9b] transition-colors duration-300 text-base cursor-pointer" href="#portfolio">Portfolio</a>
+                            <a class="block text-[#b8b8c0] hover:text-[#2d9b9b] transition-colors duration-300 text-base cursor-pointer" href="#services">Services</a>
+                            <a class="block text-[#b8b8c0] hover:text-[#2d9b9b] transition-colors duration-300 text-base cursor-pointer" href="shop-dark.html">Shop</a>
+                            <a class="block text-[#b8b8c0] hover:text-[#2d9b9b] transition-colors duration-300 text-base cursor-pointer" href="#about">About</a>
+                            <a class="block text-[#b8b8c0] hover:text-[#2d9b9b] transition-colors duration-300 text-base cursor-pointer" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-[#1f5c4a] text-sm uppercase tracking-wider mb-6 font-semibold">Follow</h4>
+                        <div class="grid grid-cols-2 gap-3 max-w-[200px]">
+                            <a href="https://www.instagram.com/madamedphotography/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border-2 border-[#2d9b9b] flex items-center justify-center text-[#2d9b9b] hover:bg-[#d4622f] hover:border-[#d4622f] hover:text-white transition-all duration-300 cursor-pointer">
+                                <i class="ri-instagram-line text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full border-2 border-[#2d9b9b] flex items-center justify-center text-[#2d9b9b] hover:bg-[#d4622f] hover:border-[#d4622f] hover:text-white transition-all duration-300 cursor-pointer">
+                                <i class="ri-pinterest-line text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full border-2 border-[#2d9b9b] flex items-center justify-center text-[#2d9b9b] hover:bg-[#d4622f] hover:border-[#d4622f] hover:text-white transition-all duration-300 cursor-pointer">
+                                <i class="ri-facebook-line text-xl"></i>
+                            </a>
+                            <a href="mailto:contact@madamedphotography.com" class="w-12 h-12 rounded-full border-2 border-[#2d9b9b] flex items-center justify-center text-[#2d9b9b] hover:bg-[#d4622f] hover:border-[#d4622f] hover:text-white transition-all duration-300 cursor-pointer">
+                                <i class="ri-mail-line text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 pt-8">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <p class="text-gray-500 text-sm">© 2026Madame D Photography. All rights reserved.</p>
+                        <div class="flex items-center gap-6">
+                            <a href="https://www.instagram.com/madamedphotography/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-white/60 hover:text-[#2d9b9b] transition-colors duration-300 cursor-pointer">
+                                <i class="ri-instagram-line text-xl"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-white/60 hover:text-[#2d9b9b] transition-colors duration-300 cursor-pointer">
+                                <i class="ri-pinterest-line text-xl"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-white/60 hover:text-[#2d9b9b] transition-colors duration-300 cursor-pointer">
+                                <i class="ri-facebook-line text-xl"></i>
+                            </a>
+                            <a href="mailto:contact@madamedphotography.com" class="w-8 h-8 flex items-center justify-center text-white/60 hover:text-[#2d9b9b] transition-colors duration-300 cursor-pointer">
+                                <i class="ri-mail-line text-xl"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="text-gray-500 text-sm hover:text-[#2d9b9b] transition-colors duration-300 cursor-pointer">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('nav a, button');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
